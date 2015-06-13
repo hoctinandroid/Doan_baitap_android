@@ -1,7 +1,7 @@
 package nguyenhoang.duy.phuong.helicoptergame;
 
 /**
- * Created by Phuong on 09/06/2015.
+ * Created by Phuong on 13/06/2015.
  */
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -321,7 +321,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback{
                 }
             }
 
-            if(player.getY()+player.getHeight() >= (HEIGHT - 80)/scaleFactorY){
+            if(player.getY()+player.getHeight() >= (getHeight() - 80)/scaleFactorY){
                 if(!started) started = true;
                 player.setPlaying(false);
                 Result = -1;
@@ -467,7 +467,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback{
                 }
             }
 
-            if(player.getY()+player.getHeight() >= (HEIGHT - 80)/scaleFactorY){
+            if(player.getY()+player.getHeight() >= (getHeight() - 80)/scaleFactorY){
                 if(!started) started = true;
                 player.setPlaying(false);
                 Result = -1;
@@ -755,7 +755,7 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback{
                 }
             }
 
-            if(player.getY()+player.getHeight() >= (HEIGHT - 80)/scaleFactorY){
+            if(player.getY()+player.getHeight() >= (getHeight() - 80)/scaleFactorY){
                 if(!started) started = true;
                 player.setPlaying(false);
                 player.setLife(1);
