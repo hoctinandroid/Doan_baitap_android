@@ -1,7 +1,7 @@
 package nguyenhoang.duy.phuong.helicoptergame;
 
 /**
- * Created by Phuong on 13/06/2015.
+ * Created by Phuong on 09/06/2015.
  */
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -173,6 +173,13 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback{
                 e.printStackTrace();
             }
         }
+    }
+
+    public int getDefaultWidth(){
+        return WIDTH;
+    }
+    public int getDefaultHeight(){
+        return HEIGHT;
     }
 
     public void newMissile(int x, int y, int w, int h, int score, int frames, Bitmap res){

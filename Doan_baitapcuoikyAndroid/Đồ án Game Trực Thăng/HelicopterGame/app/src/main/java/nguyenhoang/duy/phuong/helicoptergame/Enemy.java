@@ -38,8 +38,8 @@ public class Enemy extends Player{
             else{
                 y += 10;
             }
-            if(y > gamePanel.getHeight() - height - 80){
-                y = gamePanel.getHeight() - height - 80;
+            if(y > gamePanel.getHeight() - (gamePanel.getHeight() - gamePanel.getDefaultHeight()) - height - 80){
+                y = gamePanel.getHeight() - (gamePanel.getHeight() - gamePanel.getDefaultHeight()) - height - 80;
                 up = rd.nextBoolean();
             }
             if(y < 30){
